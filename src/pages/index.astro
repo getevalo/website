@@ -1,0 +1,26 @@
+---
+import Logo from "@components/logo.astro";
+import Layout from "@layouts/default.astro";
+---
+
+<Layout path="/">
+  <div class="logo">
+    <Logo />
+  </div>
+</Layout>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .logo {
+    color: hsl(var(--brand-color) 86%);
+    width: 7rem;
+  }
+</style>
